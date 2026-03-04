@@ -1,4 +1,4 @@
-import conversions
+from conversions import convertCelsiusToKelvin, convertCelsiusToFahrenheit
 import unittest
 
 class TestConversions(unittest.TestCase):
