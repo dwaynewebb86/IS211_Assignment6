@@ -7,6 +7,7 @@ class TestConversions(unittest.TestCase):
         print("Test1: 0°C should equal 273.15 K")
         self.assertAlmostEqual(convertCelsiusToKelvin(0), 273.15, places=2)
         print("passed")
+
         print("Test2: 100°C should equal 373.15 K")
         self.assertAlmostEqual(convertCelsiusToKelvin(100), 373.15, places=2)
         print("passed")
@@ -44,3 +45,6 @@ class TestConversions(unittest.TestCase):
         print("Test 5: 37°C should equal 98.6°F")
         self.assertAlmostEqual(convertCelsiusToFahrenheit(37), 98.6, places=2)
         print("passed")
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
